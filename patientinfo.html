@@ -1,0 +1,134 @@
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Family Doctor Booking</title>
+
+   <style>
+   
+   form {
+          background-color: #eee;
+          border: 1px solid #ddd;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 16px;
+          width: 540px;
+          margin:0px auto ;
+          padding:20px 40px;
+          color: #0a0a0a;
+      }
+
+      h1 { 
+          margin: 0;
+          margin-bottom: 20px;
+      }
+
+      fieldset {
+          border: none;
+          padding: 0%;
+          margin: 10px 0;
+      }
+
+label {
+    display: inline-block;
+    min-width:20px;
+    padding-right: 10px;
+}
+
+      input [ type="text"], input[type="password"] {
+          display: inline-block;
+          width: 300px;
+          padding: 0.5em;
+          font-size: 16px;
+          border:1px solid #ddd;
+          color: gray;
+          outline-color:#080808 ;
+
+      }
+       
+      
+
+      textarea {
+          vertical-align: middle;
+      }
+
+      input [type="submit"] {
+          display: black;
+          padding:19px 39px 18px 39px ;
+          color: white;
+          background-color: #070707;
+          font-size: 20px;
+          text-align:center;
+          width: 100%;
+          border: 1px solid #0c0c0c;
+      }
+
+fieldset :last-of-type {
+    margin-top: 40px;
+}
+      </style>
+   <script type="text/javascript" src="project.js"></script> 
+</head>
+<body>
+    <form >
+        <h1>Patient Information</h1>
+        
+        <form action="create_user.html" method="post" onsubmit="AddRecord2()" enctype="application/x-www-form-urlencoded">
+
+        <fieldset>
+           
+<div>
+        <label>Patient Name</label>
+        <input type="text" name="patient name" size="30" maxlength="12" placeholder="Name" required="required" >
+          <br>
+ </div>
+ <div>
+
+
+        <label>Phone Number</label>
+        <input type="number" name="phone number" size="30" maxlength="12" placeholder="numbers" required="required" pattern="\d+"  title="only numbers">
+        <br>
+
+</div>
+<div>
+        <label>Health Card Number</label>
+        <input type="number" name="health card number" size="30" maxlength="12" placeholder="numbers" required="required" pattern="\d+" required="required" title="only numbers">
+        </br>
+ </div>
+<div>
+
+        <label>Birth date</label>
+        <input type="date" name="Birth date">
+        <br>
+ </div>
+<div>
+ 
+        <label>E-mail</label>
+        <input type="email" name="email" required="required" >
+        <br>
+</div>
+<div>
+    <label>Creat User Name</label>
+    <input type="text" name="username" required="required" >
+</div>
+<div>
+    <label>Creat PassWord</label>
+    <input type="password" required="required" >
+    
+    <div>
+         <label> Verify your password</label>
+          <input type="password" required="required" >
+    </div>
+
+</div>
+ <div>
+        <input type="submit" name="submit" value="Submit" />
+</div>
+        </fieldset>
+    </form>
+
+    
+</body>
+
+</html>
